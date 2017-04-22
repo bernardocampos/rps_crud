@@ -1,0 +1,21 @@
+<h1>History of rounds</h1>
+
+<table>
+  <tr>
+    <th>Computer Move</th>
+    <th>Plyaer Move</th>
+    <th>Outcome</th>
+  </tr>
+
+  <% Round.all.each do |round| %>
+  <!-- without the equal sign in the embedded ruby object tag, it doesn't print -->
+  <tr>
+    <td><%= round.computer_move %></td>
+    <td><%= round.player_move %></td>
+    <td><%= round.outcome %></td>
+  </tr>
+  <% end %>
+
+
+
+</table>
